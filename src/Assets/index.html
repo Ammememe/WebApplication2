@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+<nav id="desktop-nav">
+    <div class="logo">Amir Khatiby</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<nav id="hamburger-nav">
+    <div class="logo">Amir Khatiby</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+</nav>
+<sec id="profile">
+    <div class="section__pic-container">
+        <img src="AmirkhatibyWeb.png" alt="Amir Khatiby Profile Picture">
+    </div>
+    <div class="section_text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title">Amir Khatiby</h1>
+        <p class="section__text__p2">Aspiring Cloud Developer</p>
+        <div class="btn-container">
+            <button
+                    class="btn btn-color-1" onclick="window.open('AmirCV.pdf')"
+            >Download CV</button>
+            <button
+                    class="btn btn-color-1" onclick="location.href='./#Contact'"
+            >Contact Info</button>
+        </div>
+        <div id="socials-container">
+            <img src="linkedin.png"
+                 alt="My Linkedin profile"
+                 class="icon"
+                 onclick="location.href='https://www.linkedin.com/in/amir-khatiby-49163a155/'"
+            />
+            <img src="github.png"
+                 alt="My Github profile"
+                 class="icon"
+                 onclick="location.href='https://github.com/Ammememe'"
+            />
+
+        </div>
+    </div>
+</sec>
+<section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+
+    <div class="section-container">
+        <div class="section__pic-container">
+            <img src="AmirKhatiby.jpg" alt=""/>
+        </div>
+        <div class="about-details-container">
+
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="experience.png"
+                         alt="Experience icon"
+                         class="icon">
+                    <h3>Experience</h3>
+                    <p2>Cloud Development using AWS</p2>
+                </div>
+
+                <div class="detail-container">
+                    <img src="education.png"
+                         alt="Education Icon"
+                         class="icon">
+                    <h3>Education</h3>
+
+                    <p3>Cloud Development AWS - 2022 - Now<br />Software Engineering and Management - 2021 - 2022</p3>
+                </div>
+
+
+            </div>
+            <p2>
+                Enthusiastic and creative individual with a passion for java
+                programming, Spring Boot development, and cloud development using
+                AWS. With a skill for innovative thinking, I bring my adaptability and
+                collaborative spirit to the table, aiming to contribute effectively to
+                projects and drive meaningful outcomes.
+            </p2>
+
+        </div>
+        <div class="text-container">
+
+        </div>
+        <img src="arrow.png" alt="Arrow icon" class="icon arrow"
+             onclick="location.href='./#experience'"/>
+    </div> <!-- Close the missing div here -->
+</section>
+<section id="experience">
+    <p1 class ="section__text__p1>">Explore my</p1>
+    <h2 class ="section__text__p1>">Experience</h2>
+    <div class="experience-details-container">
+        <div class = "about-containers">
+        <div class="about-containers">
+            <div class="details-container">
+                <h2 class="experience-sub-title">Frontend Development</h2>
+                <div class="article-container">
+                    <artic>
+                        <img src="checkmark.png"
+                             alt = "Experience icon"
+                             class="icon"
+                             />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </artic>
+                    <artic>
+                        <img src="checkmark.png"
+                             alt = "Experience icon"
+                             class="icon"
+                        />
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </artic>
+                    <artic>
+                        <img src="checkmark.png"
+                             alt = "Experience icon"
+                             class="icon"
+                        />
+                        <div>
+                            <h3>Javascript</h3>
+                            <p>Basic</p>
+                        </div>
+                    </artic>
+                    <artic>
+                        <img src="checkmark.png"
+                             alt = "Experience icon"
+                             class="icon"
+                        />
+                        <div>
+                            <h3>Java Development</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </artic>
+                    <artic>
+                        <img src="checkmark.png"
+                             alt = "Experience icon"
+                             class="icon"
+                        />
+                        <div>
+                            <h3>Amazon Web Services</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </artic>
+                    <artic>
+                        <img src="checkmark.png"
+                             alt = "Experience icon"
+                             class="icon"
+                        />
+                        <div>
+                            <h3>Spring Boot</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </artic>
+                </div>
+            </div>
+
+
+
+                        <div class="details-container">
+                            <h2 class="experience-sub-title">Soft Skills</h2>
+                            <div class="article-container">
+                                <artic>
+                                    <img src="checkmark.png"
+                                         alt = "Experience icon"
+                                         class="icon"
+                                    />
+                                    <div>
+                                        <h3>Communication</h3>
+                                        <p>Advanced</p>
+                                    </div>
+                                </artic>
+                                <artic>
+                                    <img src="checkmark.png"
+                                         alt = "Experience icon"
+                                         class="icon"
+                                    />
+                                    <div>
+                                        <h3>Troubleshooting</h3>
+                                        <p>Advanced</p>
+                                    </div>
+                                </artic>
+                                <artic>
+                                    <img src="checkmark.png"
+                                         alt = "Experience icon"
+                                         class="icon"
+                                    />
+                                    <div>
+                                        <h3>Working In Group</h3>
+                                        <p>Advanced</p>
+                                    </div>
+                                </artic>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    <img
+        src="arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"/>
+</section>
+<section id="projects">
+    <p2 class="section_text_p1"> Browse My Recent</p2>
+    <h1 class="title">Projects</h1>
+    <div class="project-container">
+        <!-- Project One -->
+        <div class="detail-container color-container">
+            <div class="article-container">
+                <img src="project-1.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Ammememe/springboot'">
+                    Github
+                </button>
+            </div>
+        </div>
+
+        <!-- Project Two -->
+        <div class="detail-container color-container">
+            <div class="article-container">
+                <img src="project-2.png" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Ammememe/ApiCall'">
+                    Github
+                </button>
+            </div>
+        </div>
+
+        <!-- Project Three -->
+        <div class="detail-container color-container">
+            <div class="article-container">
+                <img src="project-3.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Ammememe/CRUDPerson'">
+                    Github
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+        />
+
+
+</section>
+<section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact me</h1>
+    <div class="contact-info-container">
+        <div class="contact-info">
+            <img src="email.png" alt="Email icon" class="icon contact-icon" />
+            <p><a href="mailto:examplemail@gmail.com">amir_khatiby@hotmail.com</a></p>
+        </div>
+        <div class="contact-info">
+            <img src="linkedin.png" alt="LinkedIn icon" class="icon contact-icon email-icon" />
+            <p><a href="https://www.linkedin.com/in/amir-khatiby-49163a155/">Amir Khatiby</a></p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p>Copyright &#169 2023 All Rights Reserved Amir Khatiby; </p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
