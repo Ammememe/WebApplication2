@@ -43,28 +43,75 @@
         <h1 class="title">Amir Khatiby</h1>
         <p class="section__text__p2">Aspiring Cloud Developer</p>
         <div class="btn-container">
-            <button
-                    class="btn btn-color-1" onclick="window.open('AmirCV.pdf')"
-            >Download CV</button>
-            <button
-                    class="btn btn-color-1" onclick="location.href='./#Contact'"
-            >Contact Info</button>
+            <a
+                    class="btn btn-color-1"
+                    href="AmirCV.pdf"
+                    download="AmirCV.pdf"
+                    onclick="incrementDownloadCount()"
+            >
+                Download CV
+                <span id="download-count">0</span>
+            </a>
+            <button class="btn btn-color-1" onclick="location.href='./#Contact'">
+                Contact Info
+            </button>
         </div>
-        <div id="socials-container">
-            <img src="linkedin.png"
-                 alt="My Linkedin profile"
-                 class="icon"
-                 onclick="location.href='https://www.linkedin.com/in/amir-khatiby-49163a155/'"
-            />
-            <img src="github.png"
-                 alt="My Github profile"
-                 class="icon"
-                 onclick="location.href='https://github.com/Ammememe'"
-            />
 
+        <div id="socials-container">
+            <img
+                    src="linkedin.png"
+                    alt="My Linkedin profile"
+                    class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/amir-khatiby-49163a155/'"
+            />
+            <img
+                    src="github.png"
+                    alt="My Github profile"
+                    class="icon"
+                    onclick="location.href='https://github.com/Ammememe'"
+            />
         </div>
     </div>
 </sec>
+
+
+
+<script>
+    function incrementDownloadCount() {
+        // Check if downloadCount is stored in local storage
+        let downloadCount = localStorage.getItem('downloadCount');
+
+        // If downloadCount is not set, initialize it to 0
+        if (!downloadCount) {
+            downloadCount = 0;
+        }
+
+        // Increment the download count
+        downloadCount++;
+
+        // Update the downloadCount in local storage
+        localStorage.setItem('downloadCount', downloadCount);
+
+        // Display the updated download count on the page
+        const downloadCountElement = document.getElementById('download-count');
+        if (downloadCountElement) {
+            downloadCountElement.textContent = downloadCount;
+        }
+    }
+
+    // Initial setup: Display the download count from local storage
+    const initialDownloadCount = localStorage.getItem('downloadCount');
+    if (initialDownloadCount) {
+        const downloadCountElement = document.getElementById('download-count');
+        if (downloadCountElement) {
+            downloadCountElement.textContent = initialDownloadCount;
+        }
+    }
+</script>
+
+
+
+
 <section id="about">
     <p class="section__text__p1">Get To Know More</p>
     <h1 class="title">About Me</h1>
@@ -109,128 +156,96 @@
         </div>
         <img src="arrow.png" alt="Arrow icon" class="icon arrow"
              onclick="location.href='./#experience'"/>
-    </div> <!-- Close the missing div here -->
+    </div>
 </section>
 <section id="experience">
-    <p1 class ="section__text__p1>">Explore my</p1>
-    <h2 class ="section__text__p1>">Experience</h2>
+    <p class="section__text__p1">Explore my</p>
+    <h2 class="section__text__p1">Experience</h2>
     <div class="experience-details-container">
-        <div class = "about-containers">
         <div class="about-containers">
             <div class="details-container">
                 <h2 class="experience-sub-title">Frontend Development</h2>
                 <div class="article-container">
-                    <artic>
-                        <img src="checkmark.png"
-                             alt = "Experience icon"
-                             class="icon"
-                             />
+                    <article>
+                        <img src="checkmark.png" alt="Experience icon" class="icon" />
                         <div>
                             <h3>HTML</h3>
                             <p>Intermediate</p>
                         </div>
-                    </artic>
-                    <artic>
-                        <img src="checkmark.png"
-                             alt = "Experience icon"
-                             class="icon"
-                        />
+                    </article>
+                    <article>
+                        <img src="checkmark.png" alt="Experience icon" class="icon" />
                         <div>
                             <h3>CSS</h3>
                             <p>Intermediate</p>
                         </div>
-                    </artic>
-                    <artic>
-                        <img src="checkmark.png"
-                             alt = "Experience icon"
-                             class="icon"
-                        />
+                    </article>
+                    <article>
+                        <img src="checkmark.png" alt="Experience icon" class="icon" />
                         <div>
                             <h3>Javascript</h3>
                             <p>Basic</p>
                         </div>
-                    </artic>
-                    <artic>
-                        <img src="checkmark.png"
-                             alt = "Experience icon"
-                             class="icon"
-                        />
+                    </article>
+                    <article>
+                        <img src="checkmark.png" alt="Experience icon" class="icon" />
                         <div>
                             <h3>Java Development</h3>
                             <p>Intermediate</p>
                         </div>
-                    </artic>
-                    <artic>
-                        <img src="checkmark.png"
-                             alt = "Experience icon"
-                             class="icon"
-                        />
+                    </article>
+                    <article>
+                        <img src="checkmark.png" alt="Experience icon" class="icon" />
                         <div>
                             <h3>Amazon Web Services</h3>
                             <p>Intermediate</p>
                         </div>
-                    </artic>
-                    <artic>
-                        <img src="checkmark.png"
-                             alt = "Experience icon"
-                             class="icon"
-                        />
+                    </article>
+                    <article>
+                        <img src="checkmark.png" alt="Experience icon" class="icon" />
                         <div>
                             <h3>Spring Boot</h3>
                             <p>Intermediate</p>
                         </div>
-                    </artic>
+                    </article>
                 </div>
             </div>
-
-
-
-                        <div class="details-container">
-                            <h2 class="experience-sub-title">Soft Skills</h2>
-                            <div class="article-container">
-                                <artic>
-                                    <img src="checkmark.png"
-                                         alt = "Experience icon"
-                                         class="icon"
-                                    />
-                                    <div>
-                                        <h3>Communication</h3>
-                                        <p>Advanced</p>
-                                    </div>
-                                </artic>
-                                <artic>
-                                    <img src="checkmark.png"
-                                         alt = "Experience icon"
-                                         class="icon"
-                                    />
-                                    <div>
-                                        <h3>Troubleshooting</h3>
-                                        <p>Advanced</p>
-                                    </div>
-                                </artic>
-                                <artic>
-                                    <img src="checkmark.png"
-                                         alt = "Experience icon"
-                                         class="icon"
-                                    />
-                                    <div>
-                                        <h3>Working In Group</h3>
-                                        <p>Advanced</p>
-                                    </div>
-                                </artic>
-
-
-                            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Soft Skills</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>Communication</h3>
+                            <p>Advanced</p>
                         </div>
-                    </div>
+                    </article>
+                    <article>
+                        <img src="checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>Troubleshooting</h3>
+                            <p>Advanced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="checkmark.png" alt="Experience icon" class="icon" />
+                        <div>
+                            <h3>Working In Group</h3>
+                            <p>Advanced</p>
+                        </div>
+                    </article>
                 </div>
+            </div>
         </div>
-    <img
-        src="arrow.png"
-        alt="arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"/>
+        <img
+                src="arrow.png"
+                alt="arrow icon"
+                class="icon arrow"
+                onclick="location.href='./#projects'"
+        />
+    </div>
 </section>
+
 <section id="projects">
     <p2 class="section_text_p1"> Browse My Recent</p2>
     <h1 class="title">Projects</h1>
