@@ -78,28 +78,28 @@
 
 <script>
     function incrementDownloadCount() {
-        // Check if downloadCount is stored in local storage
+
         let downloadCount = localStorage.getItem('downloadCount');
 
-        // If downloadCount is not set, initialize it to 0
+
         if (!downloadCount) {
             downloadCount = 0;
         }
 
-        // Increment the download count
+
         downloadCount++;
 
-        // Update the downloadCount in local storage
+
         localStorage.setItem('downloadCount', downloadCount);
 
-        // Display the updated download count on the page
+
         const downloadCountElement = document.getElementById('download-count');
         if (downloadCountElement) {
             downloadCountElement.textContent = downloadCount;
         }
     }
 
-    // Initial setup: Display the download count from local storage
+
     const initialDownloadCount = localStorage.getItem('downloadCount');
     if (initialDownloadCount) {
         const downloadCountElement = document.getElementById('download-count');

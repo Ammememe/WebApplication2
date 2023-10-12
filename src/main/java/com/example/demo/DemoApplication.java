@@ -26,7 +26,7 @@ public class DemoApplication extends SpringBootServletInitializer {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/")
-						.allowedOrigins("http://localhost:63342/WebAppInit/demo/Assets/index.html?_ijt=fmth5r1a00vu6se0r65okr8elc&_ij_reload=RELOAD_ON_SAVE")
+						.allowedOrigins("")
 						.allowedMethods("GET", "POST", "PUT", "DELETE")
 						.allowCredentials(true);
 			}

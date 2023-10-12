@@ -9,7 +9,7 @@ public class DownloadController {
 
     private int downloadCount = 0;
 
-    //Ifall man gör applikationen Server sided istället för ClientSided kommer denna i bruk
+    //Server Side
     @GetMapping("/download")
     public ResponseEntity<Void> downloadResume() {
         // Increment the download count
